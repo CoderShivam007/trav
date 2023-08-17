@@ -1,0 +1,169 @@
+.naturereach{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 50px;
+   
+}
+
+.nr-small{
+    flex: 0 0 20%;
+    max-width: 0 0 20%;
+  
+}
+
+.nr-small img{
+    width: 100%;
+    height: 400px;
+}
+
+
+.nr-big{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin:0 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+   
+}
+
+.nr-big h3{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nr-big p span:first-child{
+    font-family: Arizonia, cursive;
+    font-size: 40px;
+    color: red;
+    font-weight: 600;
+}
+
+.nr-big p span:last-child{
+    color: red;
+    margin-left: 7px;
+    font-weight: 600;
+    border-bottom: 3px solid red;
+}
+
+.nr-big p{
+    font-size: 20px;
+}
+
+.package-banner{
+    width: 100%;
+    background: rgba(0,0,0,0.5)url(OneTreePlanted.webp);
+    background-size: cover;
+    margin-bottom: 70px;
+    height: 400px;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.package-banner div h3{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.package-banner div{
+    flex: 0 0 30%;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.package-banner div p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+}
+
+.pb-btn{
+    -webkit-font-smoothing: antialiased;
+    background: #b94532;
+    border: none;
+    color: #fff;
+    color: #f6f4f2;
+    cursor: pointer;
+    display: inline-block;
+    font-family: gtwalsheim,Avenir,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 24px 40px;
+    transition: background-color .3s ease-out,border-color .3s ease-out;
+}
+
+.package-banner div p span{
+    margin-left: 0px;
+    font-weight: 400;
+    border-bottom: 3px solid white;
+}
+
+.blog-pagination span{
+    height: 100px;
+}
+
+@media (max-width:1080px){
+    .package-banner div h3{
+        font-size: 50px;
+    }
+
+    .package-banner div{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+/*
+@media (max-width:708px){
+    .nr-small{
+        flex: 0 0 22%;
+        max-width: 22%;
+    }
+}*/
+
+@media (max-width:675px){
+    .package-banner div{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .nr-big p{
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width:500px){
+    .nr-small:last-child{
+        flex: 0 0 0%;
+    max-width: 0%;
+    }
+
+    .nr-small:first-child{
+        max-width: 0 0 30%;
+        flex: 0 0 30%;
+    }
+
+    
+}

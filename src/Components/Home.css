@@ -1,0 +1,1091 @@
+/* =============================== HOMEPAGE SECTION 1 STYLING sSTARTS =============================== */
+.home-section{
+    padding: 100px 200px;
+    position: relative;
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+   background: var(--gc);
+   animation: animate 4s ease;
+   margin-bottom: 80px;
+}
+
+@keyframes animate {
+    0%{
+        clip-path: circle(0% at 0 50%);
+    }
+
+    50%,100%{
+        clip-path: circle(150% at 0 50%);
+    }
+}
+
+
+.home-section::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+
+}
+
+
+.slider{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+    
+}
+
+.slider .new-btn-inactive{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    margin-right: 12px;
+    
+}
+
+.slider .new-btn-active{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    background: blue;
+    margin-right: 12px;
+    
+    
+
+}
+
+
+.slider .new-btn:hover{
+    transform: scale(1.2);
+}
+
+.home-section video.active {
+z-index: 000;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+clip-path: circle(150% at 0 50%);
+transition: 2s ease;
+transition-property: clip-path;
+}
+
+.home-section video.inactive {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(0% at 0 50%);    
+    }
+
+
+.home-content{
+   color: var(--wc);
+   width: 70%;
+   margin-top: 50px;
+   z-index: 100;
+
+}
+
+.home-content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home-content h1 span{
+    font-size: 1em;
+    font-weight: 550;
+}
+
+.home-content p{
+    margin-bottom: 50px;
+}
+
+.home-content a{
+background: var(--gc);
+padding: 15px 15px;
+border-radius: 30px;
+color: #fff;
+font-weight: 600;
+}
+
+.home-section .social-media{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.social-media i{
+    color: var(--wcdeam);
+    font-size: 1.6em;
+}
+
+.social-media i:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.social-media i:hover{
+    transform: scale(1.3);
+}
+
+/* =============================== HOMEPAGE SECTION 1 STYLING ENDS =============================== */
+
+/* =============================== HOMEPAGE SECTION 2 STYLING START =============================== */
+
+.normal{
+    flex: 0 0 90%;
+    max-width: 90%;
+    display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+    margin-bottom: 40px;
+}
+
+.left-normal{
+    flex: 0 0 49%;
+	max-width: 49%;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    flex-wrap: wrap;
+}
+
+
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 10px;
+    }
+
+.media-body h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+.media-body p {
+        font-size: 16px;
+    }
+
+.left-normal .smaller
+{
+    flex: 0 0 42%;
+    max-width: 42%;
+    margin-left: 20px;
+   
+}
+
+
+.right-normal{
+    flex: 0 0 40%;
+	max-width: 40%;
+padding-bottom: 20px;
+margin-right: 70px;
+
+}
+
+.right-normal span{
+    line-height: 4.5;
+}
+
+.right-normal h2{
+    flex: 0 0 49%;
+    max-width: 49%;
+    font-size: 37.5px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.right-normal p{
+    
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    padding-right: 30px;
+
+}
+
+.right-normal .btns{
+    padding: .8rem 1.5rem;
+    background: var(--gc);
+    border-radius: 3rem;
+    color: black;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
+
+/* =============================== HOMEPAGE SECTION 2 STYLING ENDS =============================== */
+
+/* =============================== HOMEPAGE SECTION 3 STYLING START =============================== */
+
+.banner img{
+   width: 100%;
+   height: 500px;
+}
+
+.banner{
+    margin: 80px 0;
+}
+
+/* =============================== HOMEPAGE SECTION 3 STYLING ENDS =============================== */
+
+
+
+/* =============================== HOMEPAGE SECTION 4 STYLING START =============================== */
+
+
+.package-container{
+    max-width: 100vw;
+    margin-bottom: 20px;
+   margin-left: 60px;
+   margin-right: 60px;
+    
+}
+
+.pack-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    
+
+ 
+}
+
+.pack-div{
+    flex: 0 0 28%;
+    max-width: 28%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+.imaging{
+    display: block;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 12px;
+    transition: all 2s;
+}
+
+
+.flaticon{
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.price {
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    display: inline-block;
+    background: #f15d30;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 0;
+    right: -8px;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 0 8px;
+    border-color: transparent transparent transparent #c7390d;
+}
+
+.price::after {
+    position: absolute;
+    top: 0;
+    content: '';
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: transparent transparent #c7390d transparent;
+}
+
+.project-wrap {
+    margin-bottom: 20px;
+    
+    
+}
+.text {
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    border-top: none;
+    margin-top: -40px;
+    background: #fff;
+    -webkit-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+    padding:1.5rem;
+    border-radius: 12px;
+}
+
+.text .days {
+    font-size: 12px;
+    color: #f15d30;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.text h3 a {
+    color: #000000;
+}
+
+.text p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.text ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.text ul li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #b3b3b3;
+}
+
+.pack-header{
+    position: relative;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 97%;
+    max-width: 97%;
+    align-items: center;
+    text-align: center
+}
+
+.sub-heading {
+    font-size: 34px;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(241, 93, 48);
+    font-family: Arizonia, cursive;
+}
+.pack-header h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+
+/* =============================== HOMEPAGE SECTION 4 STYLING ENDS =============================== */
+
+
+
+/* =============================== HOMEPAGE SECTION 5 STYLING START =============================== */
+.contact-image {
+    height: 830px;
+    position: absolute;
+    top: 0px;
+    
+}
+
+.image-section{
+    flex: 0 0 40%;
+    max-width: 40%;
+    position: relative;
+    height: 600px;
+    z-index: 15;
+
+}
+
+.contact-section{
+    flex: 0 0 100%;
+    display: flex;
+    max-width: 100%;
+    background: linear-gradient(315deg,#00ccff,#d400d4);
+    box-shadow: 0 0 2px #4d5bf9,0 0 25px #4d5bf9,0 0 10px #d400d4,0 0 10px #00ccff,0 0 10px #d400d4;
+   
+}
+
+.form-section{
+ 
+    height: 630px;
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.contact_form_container {
+    padding-top: 54px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 88px;
+   
+}
+
+.contact_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.contact-form {
+    margin-top: 52px;
+    font-size: 0px;
+}
+
+.contact_form_name {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+}
+
+.contact_form_email {
+    width: calc((100% - 30px) / 2);
+}
+
+.contact_form_subject {
+    width: 100%;
+    margin-top: 11px;
+}
+
+.contact_form_message {
+    height: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 19px;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    border-bottom: solid 2px #e1e1e1;
+    padding-top: 11px;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+input::placeholder,
+ textarea::placeholder{
+    color: rgb(25, 25, 30);
+    font-weight: 600;
+
+}
+
+.form_submit_button {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 53px;
+    border-radius: 22px;
+    padding-left: 29px;
+    padding-right: 29px;
+    background: #31124b;
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
+    border: none;
+    outline: none;
+    margin-top: 37px;
+    cursor: pointer;
+}
+
+.button span:first-child {
+    margin-left: 10px;
+}
+
+.button span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5.75px;
+    height: 5.63px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.input_field {
+    height: 48px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #FFFFFF;
+    border-bottom: solid 2px #e1e1e1;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+/* =============================== HOMEPAGE SECTION 5 STYLING ENDS =============================== */
+
+
+/* =============================== HOMEPAGE SECTION 7 STYLING START =============================== */
+
+.newsletter-section{
+    position: relative;
+    background: rgba(0, 0, 0, 0.8)url(footer.jpg);
+    background-size: cover;
+    width: 100%;
+    z-index: 10;
+    background-blend-mode: darken;
+
+    
+}
+
+.parallax_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+
+.news-container {
+    margin-right: 0px;
+    margin-left: 0px;
+    
+
+}
+
+
+.cols {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 97%;
+    flex: 0 0 97%;
+    z-index: 25;
+    
+}
+
+.newsletter_title_container{
+    padding-top: 150px;
+    text-align: center;
+    
+}
+
+.newsletter_title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+    
+    line-height: 1.2;
+    
+}
+
+.newsletter_subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+.newsletter_form_container {
+    margin-top: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter_form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+
+.newsletter_input::placeholder{
+    color: #333;
+    font-weight: 600;
+}
+
+.newsletter_input {
+    width: 100%;
+    height: 50px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding-left: 22px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.newsletter_input_email{
+    margin-left: 20px;
+    width: 400px;
+    margin-right: 20px;
+}
+
+.newsletter_input_name{
+    width: 300px;
+}
+
+.inputter{
+    display: flex;
+}
+
+
+.newsletter_button {
+    width: 161px;
+    height: 50px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.4);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+
+/* =============================== HOMEPAGE SECTION 7 STYLING ENDS =============================== */
+
+
+/* =============================== HOMEPAGE SECTION 8 STYLING START =============================== */
+
+.footer_contact_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    
+}
+
+.colu{
+    flex: 0 0 97%;
+    max-width: 97%;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.footer_contact_col{
+    flex: 0 0 31%;
+    max-width: 31%;
+}
+
+.footer_contact_item {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.footer_contact_icon {
+    width: 108px;
+    height: 108px;
+    text-align: center;
+    
+   
+}
+
+.footer_contact_icon img {
+    max-width: 100%;
+}
+
+.footer_contact_title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+.footer_contact_list{
+    margin-top: 19px;
+}
+
+.footer_contact_list ul {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.footer_contact_list ul li:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.footer_contact_list ul li {
+    font-size: 14px;
+    color: white;
+    line-height: 1.71;
+}
+
+
+.col{
+    max-width: 100%;
+    text-align: center;
+  color: white;
+  font-size: 14px;
+  padding-bottom: 20px;
+    
+}
+
+.col .foot{
+    filter: brightness(50%);
+}
+
+.col .aname{
+    color: blue;
+    
+}
+
+
+/* =============================== HOMEPAGE SECTION 8 STYLING ENDS =============================== */
+
+
+/* ======================== RESPONSIVENESS ======================== */
+
+
+
+@media (max-width:1275px){
+    .left-normal{
+        margin-left: 30px;
+    }
+
+    .right-normal{
+        margin-right: 30px;
+    }
+
+    .left-normal .smaller{
+        margin: 15px;
+    }
+
+    .contact-image{
+        width: 465px;
+    }
+
+    .small-banner img{
+        margin-left: 0;
+    }
+
+    
+}
+
+@media (max-width:1040px){
+    .home-section{
+        padding: 100px 20px;
+        width: 100%;
+    }
+
+    .home-section video.active {
+        clip-path: initial;
+      }
+
+    .social-media{
+        right: 5px;
+    }
+
+    .left-normal {
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .right-normal{
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin-left: 70px;
+        margin-right: 40px;
+    }
+
+    .left-normal .smaller{
+    margin-left: 20px;
+    }
+
+    .pack-div{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .package-container{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .contact-image{
+        width: 320px;
+    }
+
+    .newsletter_input_email{
+        width: 300px;
+    }
+    
+    .newsletter_input_name{
+        width: 200px;
+    }
+}
+
+@media (max-width:880px){
+    .footer_contact_col{
+        flex: 0 0 97%;
+        max-width: 97%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+   
+}
+
+@media (max-width:665px)
+{
+    .contact-image{
+        width: 250px;
+    }
+
+    .contact_title {
+        font-size: 24px;
+    }
+
+    .contact_form_name {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .contact_form_email {
+        width: 100%;
+        margin-top: 11px;
+    }
+
+    .newsletter_input_email{
+        width: 400px;
+    }
+
+    .form_submit_button {
+        line-height: 44px;
+    }
+
+    .button {
+        height: 44px;
+        border-radius: 22px;
+    }
+
+    .newsletter_form > div:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .newsletter_input {
+        height: 40px;
+    }
+
+    .inputter{
+        display: block;
+    }
+
+    .newsletter_input_name{
+        width: 300px;
+    }
+
+    .newsletter_input_email{
+        width: 300px;
+        margin-left: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .left-normal .smaller{
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width:480px){
+    .home-section{
+        padding: 100px 10px;
+    }
+
+    .home-content h1{
+        font-size: 3.2em;
+    }
+
+    .left-normal .smaller{
+        flex: 0 0 75%;
+        max-width: 75%;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+
+
+    .pack-div{
+        flex: 0 0 99%;
+        max-width: 99%;
+    }
+    
+    .package-container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .contact-image{
+        width: 200px;
+    }
+
+    .contact_form_message{
+        height: 80px;
+    }
+
+    .button span{
+        display: none;
+    }
+
+    .form_submit_button{
+        font-size: 8px;
+    }
+
+    .newsletter_input_name,.newsletter_input_email{
+        width: 350px;
+    }
+
+    .colu{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .small-banner img{
+        width: 400px;
+        height: 400px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:405px) {
+    .home-content h1{
+        font-size: 2.7em;
+    }
+
+    .home-section{
+        padding: 100px 5px;
+    }
+
+    .package-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    button{
+        overflow: hidden;
+    }
+
+    .input_field {
+        margin-bottom: 0px;}
+
+        
+    .newsletter_input_name,.newsletter_input_email{
+        width: 250px;
+    }
+
+    .small-banner img{
+        width: 300px;
+        height: 300px;
+        margin-top: 180px;
+    }
+
+    .left-normal .smaller{
+        flex: 0 0 65%;
+        max-width: 65%;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width:366px)
+{
+    .left-normal .smaller{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+}
+

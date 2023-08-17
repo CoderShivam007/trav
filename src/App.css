@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat:wght@600&family=Lumanosimo&family=Open+Sans:wght@400;500&family=Oswald:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Satisfy&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --pc: hsl(199,100%,33%);
+    --sc: hsl(187,85%,43%);
+    --gc: linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%) );
+    --wc: hsl(0,0%,100%);
+    --bc: hsl(201,33%,16%);
+    --tc: hsl(240,4%,36%);
+    --wcdeam: hsl(0,0%,93%);
+    --gt: rgb(190,190,190);
+    --ic: rgb(239,239,239);
+    --bc: rgb(240,240,240);
+    --cardbg: rgb(225,225,225);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li{
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.section{
+    padding: 4rem 0 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
+
+.icon{
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+    transform: translateY(5px);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .6rem 1.5rem;
+    background: var(--gc);
+    border-radius: 3rem;
+    color: black;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.btn:hover{
+    background-color: var(--sc);
+}
+
+video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+input{
+    font-size: 100%;
+}
+
+body{
+    background: var(--bc);
+
+}
+
+.logo{
+    position: absolute;
+    top: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    
+}
+
+#progressbar{
+position: fixed;
+top: 0;
+right: 0;
+width: 8px;
+background: linear-gradient(to top, #008aff,#00ffe7);
+animation: animater 5s linear infinite;
+z-index: 10000;
+}
+
+@keyframes animater {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+

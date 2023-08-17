@@ -1,23 +1,60 @@
-import logo from './logo.svg';
+import React, {  useEffect } from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Components/Home';
+
+import About from './Components/About';
+import Blog from './Components/Blog';
+import Contact from './Components/Contact';
+import Login from './Components/Login';
+import Services from './Components/Services';
+import Package from './Components/Package';
+
 
 function App() {
+  useEffect(() => {
+
+   
+    let progress = document.getElementById('progressbar');
+    let totalheight = document.body.scrollHeight - window.innerHeight;
+
+
+    const updateProgressBar = () => {
+      let progressheight = (window.scrollY / totalheight) * 100;
+      progress.style.height = progressheight + "%";
+    }
+
+    window.addEventListener('scroll', updateProgressBar);
+
+    return () => {
+      // Clean up the event listener when the component unmounts
+      window.removeEventListener('scroll', updateProgressBar);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on mount
+
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+        <div id='progressbar'></div>
+        <div id='scrollbar'></div>
+        <BrowserRouter>
+
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/service" element={<Services />}></Route>
+            <Route path="/package" element={<Package />}></Route>
+            <Route path="/blog" element={<Blog />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+
+
+          </Routes>
+
+        </BrowserRouter>
+  
+
     </div>
   );
 }
