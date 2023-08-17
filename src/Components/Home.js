@@ -27,17 +27,22 @@ export default function Home() {
     }, []);
 
     function activeslide(num) {
-        if (num === 2) {
+        if (num === 1) {
             setSelectedButton(1);
         }
 
-        else if (num === 3) {
+        else if (num === 2) {
             setSelectedButton(2);
         }
 
-        else if (num === 4) {
-            setSelectedButton(3)
+        else if (num === 3) {
+            setSelectedButton(3);
         }
+
+        else if (num === 4) {
+            setSelectedButton(4);
+        }
+
 
         else {
             setSelectedButton(0);
@@ -56,10 +61,11 @@ export default function Home() {
 
             <section className={`home-section`}>
 
-                <video src='video1.mp4' autoPlay muted loop id='v1' className={selectedButton === 0 ? 'active' : 'inactive'}> </video>
-                <video src='video2.mp4' autoPlay muted loop id='v2' className={selectedButton === 1 ? 'active' : 'inactive'}> </video>
-                <video src='video3.mp4' autoPlay muted loop id='v3' className={selectedButton === 2 ? 'active' : 'inactive'}> </video>
-                <video src='video4.mp4' autoPlay muted loop id='v4' className={selectedButton === 3 ? 'active' : 'inactive'}> </video>
+            <img src='home1.jpg' id='v3' className={selectedButton === 0 ? 'active' : 'inactive'} />
+                <img src='home3.jpg' id='v3' className={selectedButton === 1 ? 'active' : 'inactive'} />
+                <img src='contact.jpg' id='v3' className={selectedButton === 2 ? 'active' : 'inactive'} /> 
+                <img src='home2.jpg' id='v3' className={selectedButton === 3 ? 'active' : 'inactive'} /> 
+                <img src='services.jpg' id='v3' className={selectedButton === 4 ? 'active' : 'inactive'} /> 
 
 
                 <div className='home-content'>
@@ -79,10 +85,11 @@ export default function Home() {
                 </div>
 
                 <div className='slider'>
-                    <div key={1} className={selectedButton === 0 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(1)} ></div>
-                    <div key={2} className={selectedButton === 1 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(2)} ></div>
-                    <div key={3} className={selectedButton === 2 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(3)}></div>
-                    <div key={4} className={selectedButton === 3 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(4)}></div>
+                    <div key={0} className={selectedButton === 0 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(0)} ></div>
+                    <div key={1} className={selectedButton === 1 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(1)} ></div>
+                    <div key={2} className={selectedButton === 2 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(2)}></div>
+                    <div key={3} className={selectedButton === 3 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(3)}></div>
+                    <div key={4} className={selectedButton === 4 ? 'new-btn-active' : 'new-btn-inactive'} onClick={() => activeslide(4)}></div>
                 </div>
 
             </section>
